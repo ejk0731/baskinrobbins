@@ -7,6 +7,10 @@
 let c_no = get_url_info('cate_no');
 let i_no = get_url_info('item_no');
 
+if(c_no < 0) {
+    location.replace('./index.html')
+}
+
 let item_addr = menu_array[c_no];
 let tmp_data = ITEM_LIST[c_no][i_no - 1];
 

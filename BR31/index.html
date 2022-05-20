@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <script>
-    if(navigator.maxTouchPoints >= 1) {
-        // 태블릿 & 모바일
-        location.replace('../m_BR31/m_index.html')
-    }
-    
+    <script> 
+        if(navigator.maxTouchPoints >= 1) {
+            
+            let url = location.href;
+            url = url.split('?');
+            if(url.length > 0) {
+                url = "?"+url[1];
+            }
+            else {
+                url="";
+            }
+            // 태블릿 & 모바일
+            location.replace(`../m_BR31/m_index.html${url}`)
+        } 
     </script>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -244,33 +253,33 @@
                                 <div class="menu_img menu_img0"></div>
                                 <div class="menu_title">ICECREAM</div>
                                 <p class="menu_desc">아이스크림의 기준, 배스킨라빈스</p>
-                                <a href="#" class="menu_more">-> more</a>
+                                <a href="product.html?cate_no=1" class="menu_more">-> more</a>
                             </div>
                             <div class="menubox menu_right menu_cake">
                                 <div class="menu_img menu_img1"></div>
                                 <div class="menu_title">ICECREAM CAKE</div>
                                 <p class="menu_desc">아이와 어른이 좋아하는 아이스크림을 <br>하나의 케이크에서 모두 즐기세요!</p>
-                                <a href="#" class="menu_more">-> more</a>
+                                <a href="product.html?cate_no=2" class="menu_more">-> more</a>
                             </div>
                             <div class="menubox menu_left menu_beverage">
                                 <div class="menu_img menu_img2_1"></div>
                                 <div class="menu_img menu_img2_2"></div>
                                 <div class="menu_title">BEVERAGE</div>
                                 <p class="menu_desc">아이스크림으로 즐기는 배스킨라빈스만의 음료!</p>
-                                <a href="#" class="menu_more">-> more</a>
+                                <a href="product.html?cate_no=3" class="menu_more">-> more</a>
                             </div>
                             <div class="menubox menu_right menu_coffee">
                                 <div class="menu_img menu_img3"></div>
                                 <div class="menu_title">COFFEE</div>
                                 <p class="menu_desc">배스킨라빈스만의 부드러운 촉감과 달콤한 풍미!</p>
-                                <a href="#" class="menu_more">-> more</a>
+                                <a href="product.html?cate_no=4" class="menu_more">-> more</a>
                             </div>
                             <div class="menubox menu_left menu_dessert">
                                 <div class="menu_img menu_img4_1"></div>
                                 <div class="menu_img menu_img4_2"></div>
                                 <div class="menu_title">DESSERT</div>
                                 <p class="menu_desc">아이스크림을 더욱 재미있게! <br>간편하게 즐기는 방법!</p>
-                                <a href="#" class="menu_more">-> more</a>
+                                <a href="product.html?cate_no=5" class="menu_more">-> more</a>
                             </div>
                             <div class="menubox menu_right menu_gift">
                                 <div class="menu_img menu_img5"></div>

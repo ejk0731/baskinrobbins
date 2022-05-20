@@ -3,9 +3,18 @@
 <head>
     <script>
     if(navigator.maxTouchPoints >= 1) {
+        
+        let url = location.href;
+        url = url.split('?');
+        if(url.length > 0) {
+            url = "?"+url[1];
+        }
+        else {
+            url="";
+        }
         // 태블릿 & 모바일
-        location.replace('../m_BR31/m_product.html')
-    }
+        location.replace(`../m_BR31/m_product.html${url}`)
+    }  
     </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

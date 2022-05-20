@@ -71,7 +71,7 @@ $('.size').click(function(){
 
         total_price()
         // detail_height_plus()
-        console.log(121213)
+        // console.log(121213)
     }
 })
 
@@ -161,7 +161,7 @@ function handpack_out() {
     let chk_pack = ["c5","c6","c7","c8"];
     let chk_result = true;
     for(let i=0; i<handpack_length; i++){
-        console.log($('.hidden_index').eq(i).val())
+        // console.log($('.hidden_index').eq(i).val())
         for(let j=0; j<chk_pack.length; j++) {
             if($('.hidden_index').eq(i).val() ==  chk_pack[j]) {
                 chk_result = false;

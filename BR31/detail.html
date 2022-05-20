@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <script>
-       if(navigator.maxTouchPoints >= 1) {
-        // 태블릿 & 모바일
-        location.replace('../m_BR31/m_detail.html')
-    } 
+    <script> 
+        if(navigator.maxTouchPoints >= 1) {
+            
+            let url = location.href;
+            url = url.split('?');
+            if(url.length > 0) {
+                url = "?"+url[1];
+            }
+            else {
+                url="";
+            }
+            // 태블릿 & 모바일
+            location.replace(`../m_BR31/m_detail.html${url}`)
+        } 
     </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -171,7 +180,7 @@
                             <div class="item_desc">
                                 <p>밀크 초콜릿, 다크 초콜릿, 화이트 무스 세 가지 아이스크림에 달콤 바삭한 초코볼이 더해진 아이스크림</p>
                             </div>
-                            <!-- <img src="./img/item/best/1.png" alt=""> -->
+                            <!-- <img class="icecream" src="./img/item/best/1.png" alt="icecream"> -->
                             <img class="icecream_cone" src="./img/img_con.png" alt="icecream_corn">
                         </div>
                         <div class="detailbox_wrap">

@@ -131,11 +131,11 @@ $(window).scroll(function(){
 // 화면 사이즈 바뀔때마다 바뀌는 event_box left값 구하기
 let event_width = $('.event_box').outerWidth();
 let event_length = $('.event_box').length;
-// setTimeout(function(){
+setTimeout(function(){
     for(i=0; i<event_length; i++){
         $('.event_box').eq(i).css({left: event_width * i})
     }
-// }, 100)
+}, 100)
 
 $(window).resize(function(){
     event_width = $('.event_box').outerWidth();
@@ -224,7 +224,7 @@ $(window).scroll(function(){
                         right: m_amount
                     }, box_ani_timer)
                 }
-            }, i * 100)
+            }, i * 200)
         }
         
         // let box_ani = setInterval(function(){

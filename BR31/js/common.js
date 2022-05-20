@@ -52,6 +52,10 @@ function get_url_info(key) {
                 return tmp_url[1];
             }
         }
+        return -1;
+    }
+    else {
+        return -1;
     }
 }
 
